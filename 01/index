@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html lang="en" xmlns="http://www.w3.org/1999/html">
+ <head>
+         <title>index</title>
+         <meta charset="UTF-8">
+         <style>
+             .container {
+                 display: grid;
+                 grid-gap: 10px;
+
+                 grid-template-columns:repeat(1, 1fr);
+                 grid-template-rows: repeat(0, 1fr);
+
+             }
+             div{
+                 text-align: left;
+                 height: 50px;
+                 padding-top: 30px;
+             }
+             .col {
+                 background: lightgoldenrodyellow;
+             }
+
+
+
+         </style>
+     </head>
+ <body>
+ <div  style="text-align: center;"><h1>个人主页</h1></div>
+
+
+ <div class="container">
+
+     <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic2.zhimg.com%2F50%2Fv2-60bc9fb1542a495c7c18e219c2e4c34f_hd.jpg&refer=http%3A%2F%2Fpic2.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1638341221&t=8e879c7da6d9f3e50b5dd84c015b50c4" height="200"  alt="">
+     <div class="col">姓名：黄孜</div>
+     <div class="col">性别：女</div>
+     <div class="col">学号：2019213896</div>
+     <div class="col">兴趣爱好：阅读</div>
+
+ </div>
+
+ </body>
+ </html>
