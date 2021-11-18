@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+     .zuo_box{
+         text-align: center;
+         font-size: larger;
+         font-weight: bolder;
+         float: left;
+         width: 50%;
+         height: 500px;
+         /*background-color: pink;*/
+         padding-left: 10px;
+         border-collapse: collapse;
+         /*border: 3px solid black;*/
+
+     }
+     .zuo_box tr th,
+     .zuo_box tr td{
+         border: 1px solid black;
+         width: 100px;
+
+     }
+     .you_box {
+         float: left;
+         right: 0;
+         width: 50%;
+         height: 500px;
+      /*background-color: blue;*/
+         text-align: center;
+         padding-top: 200px;/*这个是盒子内内容和盒子的距离*/
+         font-size: larger;
+         font-weight: bolder;
+
+         /*top: 20px;这个是盒子之间的距离*/
+     }
+    </style>
+</head>
+<body>
+<div class="big_box">
+<table class="zuo_box">
+
+    <tr>
+        <th>课时</th>
+        <th>周一</th>
+        <th>周二</th>
+        <th>周三</th>
+    </tr>
+
+    <tr class="zuo">
+    <td>1-2</td>
+    <td class="zuo1">微机</td>
+    <td class="zuo2">web</td>
+    <td class="zuo3">操作系统</td>
+
+    </tr>
+    <tr>
+        <td>3-4</td>
+        <td class="zuo4">专业英语</td>
+        <td class="zuo5">数据库</td>
+        <td class="zuo6">信息检索技术</td>
+    </tr>
+</table>
+
+    <div class="you_box">
+
+    </div>
+
+</div>
+<script>
+    let zuo1 = document.querySelector(".zuo1");
+    let zuo2 = document.querySelector(".zuo2");
+    let zuo3 = document.querySelector(".zuo3");
+    let zuo4 = document.querySelector(".zuo4");
+    let zuo5 = document.querySelector(".zuo5");
+    let zuo6 = document.querySelector(".zuo6");
+    let zuo = document.querySelector(".zuo_box");
+    let you = document.querySelector(".you_box");
+
+    zuo1.addEventListener("mouseover",function()
+    {
+        you.innerText = "微机\n  " +
+            "  2021下学期  第1-18周 \n " +
+            " 老师：姚老师";
+    });
+    zuo2.addEventListener("mouseover",function()
+    {
+        you.innerText = "web\n  " +
+            "  2021下学期  第1-18周 \n " +
+            " 老师：涂老师";
+    });
+    zuo3.addEventListener("mouseover",function()
+    {
+        you.innerText = "操作系统 \n " +
+           "  2021下学期  第1-18周\n  " +
+            " 老师：张老师";
+    });
+    zuo4.addEventListener("mouseover",function()
+    {
+        you.innerText = "专业英语 \n " +
+            "  2021下学期  第1-18周\n  " +
+            " 老师：朱老师";
+    });
+    zuo5.addEventListener("mouseover",function()
+    {
+        you.innerText ="数据库\n "+
+            " 2021下学期  第1-18周  \n" +
+            " 老师：杨老师";
+    });
+    zuo6.addEventListener("mouseover",function()
+    {
+        you.innerText = "信息检索技术\n  " +
+            "  2021下学期  第1-18周\n  " +
+            " 老师：张老师";
+    });
+    zuo.addEventListener("mouseout",function(){
+        you.innerHTML=""
+    })
+</script>
+
+</body>
+</html>
